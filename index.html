@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <button id="get-joke">Random joke</button>
-    <p id="joke"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chuck quotes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap");
+      section {
+          margin-top: 20px;
+      }
+      .jumbotron {
+          background-color: rgb(216, 195, 169);
+            border: 20px burlywood solid;
+      }
+      p {
+        font-family: 'Black Ops One', cursive;
+        font-size: 30px;
+        text-shadow: 2px 2px 4px grey;
+      }
+      img,button {
+          margin: 20px 0;
+          box-shadow: 4px 4px 12px grey;
+      }
+    </style>
+    <section class="container container-fluid jumbotron">
+      <img class="rounded mx-auto d-block img-fluid" src="./chuck.jpg" alt="Chuck Norris" />
+      <p class="text-center" id="joke"></p>
+      <div class="text-center">
+        <button class="btn btn-danger btn-lg" id="get-joke">Spinning kick</button>
+      </div>
+    </section>
     <script src="joke.js"></script>
-</body>
+  </body>
 </html>
